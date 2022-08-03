@@ -1,0 +1,3 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/0aa8409c-0b59-412c-a751-7dbb9ed919ab/microsoft.web/sites/subscriptions/0aa8409c-0b59-412c-a751-7dbb9ed919ab/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/NodeShopApp"
+}
