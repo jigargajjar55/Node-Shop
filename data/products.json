@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1232",
+    "title": "A Book",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/old-books-11281939505Msrn.jpg",
+    "description": "This is an ordinary book!",
+    "price": "20"
+  },
+  {
+    "id": "0.011900733025052235",
+    "title": "Another Product!!",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/290000/velka/pink-peony-flowers-on-wood.jpg",
+    "description": "Flower pot!",
+    "price": "20.99"
+  }
+]
