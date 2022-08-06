@@ -13,6 +13,7 @@ const multer = require("multer");
 const helmet = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
+const { v4: uuidv4 } = require("uuid");
 
 const errorController = require("./controllers/error");
 const User = require("./models/user");
@@ -36,7 +37,7 @@ const fileStorage = multer.diskStorage({
     cb(null, "images");
   },
   filename: (req, file, cb) => {
-    cb(null, new Date().toDateString() + "-" + file.originalname);
+    cb(null, uuidv4() + "-" + file.originalname);
   },
 });
 
