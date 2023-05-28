@@ -8,7 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "start:dev": "nodemon app.js"
+    "start:dev": "nodemon app.js",
+    "build": "netlify deploy --prod"
   },
   "author": "Jigar Gajjar",
   "license": "ISC",
@@ -41,7 +42,10 @@
     "pdfkit": "^0.13.0",
     "pug": "^3.0.2",
     "stripe": "^9.13.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "netlify-cli": "12.7.2",
+    "netlify-lambda": "2.0.16",
+    "serverless-http": "^2.7.0"
   },
   "description": ""
 }
