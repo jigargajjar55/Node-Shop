@@ -1,12 +1,10 @@
 const path = require("path");
 const express = require("express");
-const serverless = require("serverless-http");
 const { body } = require("express-validator");
 
 const adminController = require("../controllers/admin");
 const isAuth = require("../middleware/is-auth");
 
-const app = express();
 const router = express.Router();
 
 // // /admin/add-product  ==> GET
@@ -40,6 +38,4 @@ router.post(
 
 router.delete("/product/:productId", isAuth, adminController.deleteProduct);
 
-app.use("/.netlify/functions/admin", router);
-
-module.exports.handler = serverless(app);
+module.exports = router;

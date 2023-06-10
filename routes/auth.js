@@ -1,11 +1,9 @@
 const express = require("express");
-const serverless = require("serverless-http");
 const { check, body } = require("express-validator");
 
 const authController = require("../controllers/auth");
 const User = require("../models/user");
 
-const app = express();
 const router = express.Router();
 
 router.get("/login", authController.getLogin);
@@ -84,6 +82,4 @@ router.get("/reset/:token", authController.getNewPassword);
 
 router.post("/new-password", authController.postNewPassword);
 
-app.use("/.netlify/functions/auth", router);
-
-module.exports.handler = serverless(app);
+module.exports = router;
