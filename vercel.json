@@ -1,0 +1,41 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "next.js",
+  "functions": [
+    {
+      "name": "my-function",
+      "src": "functions/my-function.js"
+    }
+  ],
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "text/html"
+    }
+  ],
+  "ignoreCommand": "npm run clean",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "public": "public",
+  "redirects": [
+    {
+      "source": "/api/v1/users",
+      "destination": "/api/users"
+    }
+  ],
+  "regions": ["us-east1"],
+  "rewrites": [
+    {
+      "source": "/api/v1/users/:id",
+      "destination": "/api/users/:id"
+    }
+  ],
+  "trailingSlash": true,
+  "crons": [
+    {
+      "name": "my-cron",
+      "schedule": "*/5 * * * *",
+      "command": "node /path/to/script.js"
+    }
+  ]
+}

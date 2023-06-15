@@ -143,7 +143,7 @@ mongoose
     //   )
     //   .listen(process.env.PORT || 3000);
 
-    app.listen(process.env.PORT || 3000);
+    app.listen(process.env.PORT || 80);
   })
   .catch((err) => {
     console.log(err);
