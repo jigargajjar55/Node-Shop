@@ -3,9 +3,7 @@
   "framework": "next.js",
 
   "functions": {
-    "my-function": {
-      "name": "my-function"
-    }
+    "my-function": {}
   },
 
   "headers": [
