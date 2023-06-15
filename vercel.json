@@ -1,11 +1,13 @@
 {
   "buildCommand": "npm run build",
   "framework": "next.js",
+
   "functions": {
     "my-function": {
-      "src": "functions/my-function.js"
+      "name": "my-function"
     }
   },
+
   "headers": [
     {
       "key": "Content-Type",
