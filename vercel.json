@@ -1,9 +1,11 @@
 {
   "buildCommand": "npm run build",
-  "framework": "node.js",
+  "framework": "next.js",
   "functions": {
-    "name": "my-function",
-    "src": "functions/my-function.js"
+    "my-function": {
+      "name": "my-function",
+      "src": "functions/my-function.js"
+    }
   },
   "headers": [
     {
