@@ -3,7 +3,6 @@
   "framework": "next.js",
   "functions": {
     "my-function": {
-      "name": "my-function",
       "src": "functions/my-function.js"
     }
   },
